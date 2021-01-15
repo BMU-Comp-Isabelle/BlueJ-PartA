@@ -51,9 +51,11 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(220);
+        
+      
     }
 
     /**
