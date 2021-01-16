@@ -1,0 +1,26 @@
+Isabelle Thorpe, student ID: 1345, credits: 0
+Lab class 15/01/2021
+Instructor: Nicholas Day   Room: G100
+Class list:
+Number of students: 0
+Lab class 15/01/2021
+Instructor: Nicholas Day   Room: G100
+Class list:
+Isabelle Thorpe, student ID: 2042, credits: 0
+Sam Maitland, student ID: 4391, credits: 0
+Jas Labrooy, student ID: 4920, credits: 0
+Number of students: 3
+Lab class 15/01/2021
+Instructor: Nicholas Day   Room: G100
+Class list:
+Isabelle Thorpe, student ID: 2042, credits: 20
+Sam Maitland, student ID: 4391, credits: 20
+Jas Labrooy, student ID: 4920, credits: 20
+Number of students: 3
+Lab class 15/01/2021
+Instructor: Nicholas Day   Room: G100
+Class list:
+Izzy Thorpe, student ID: 2042, credits: 20
+Sam Maitland, student ID: 4391, credits: 20
+Jas Labrooy, student ID: 4920, credits: 20
+Number of students: 3
