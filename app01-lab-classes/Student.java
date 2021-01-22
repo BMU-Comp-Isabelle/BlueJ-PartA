@@ -4,10 +4,9 @@ import java.util.*;
  * The Student class represents a student in a student administration system.
  * It holds the student details such as name, id and credits
  * 
- * @author Michael Kölling and David Barnes
- * @version 2016.02.29
+ * @author Isabelle thorpe
+ * @version 22/01/2021
  * 
- * Modified by Derek
  */
 public class Student
 {
@@ -16,6 +15,8 @@ public class Student
     private String name;
 
     private String id;
+    
+    private Course course;
     
     // A BSc course has 120 credits, each module has 15 Credits
     private int credits;
@@ -37,7 +38,15 @@ public class Student
     {
         return name;
     }
-
+    
+    /**
+     * Add a course object to a student
+     */
+    public void addCourse(Course course)
+    {
+        this.course = course;
+    }
+    
     /**
      * Set a new name for this student.
      */
@@ -86,6 +95,7 @@ public class Student
      */
     public void print()
     {
-        System.out.println(name + ", student ID: " + id + ", credits: " + credits);
+        System.out.println("Name: " + name);
+        System.out.println("Id: " + id);
     }
 }

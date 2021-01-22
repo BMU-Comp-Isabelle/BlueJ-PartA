@@ -33,3 +33,18 @@ Izzy Thorpe, student ID: 2042, credits: 20
 Sam Maitland, student ID: 4391, credits: 20
 Jas Labrooy, student ID: 4920, credits: 20
 Number of students: 3
+Course computing = new Course("G400", "Computing");
+computing.print();
+Code: G400
+Title: Computing
+computing.print();
+Code: G400
+Title: Computing
+computing.print();
+Code: G400
+Title: Computing
+Course computing = new Course("G400", "Computing");
+Student isabelle = new Student("Isabelle", "6510");
+isabelle.addCourse(computing);
+isabelle.print();
+Isabelle, student ID: 6510, credits: 0
