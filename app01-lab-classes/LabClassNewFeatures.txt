@@ -48,3 +48,17 @@ Student isabelle = new Student("Isabelle", "6510");
 isabelle.addCourse(computing);
 isabelle.print();
 Isabelle, student ID: 6510, credits: 0
+isabelle.print();
+Isabelle, student ID: 6510, credits: 0
+Course computing = new Course("G400", "Computing");
+Student isabelle = new Student("Isabelle", "329832");
+isabelle.print();
+Name: Isabelle
+Id: 329832
+    Exception occurred.
+isabelle.addCourse(computing);
+isabelle.print();
+Name: Isabelle
+Id: 329832
+Code: G400
+Title: Computing
