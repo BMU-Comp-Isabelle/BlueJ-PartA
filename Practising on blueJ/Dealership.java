@@ -1,5 +1,5 @@
 /**
- * Write a description of class Dealership here.
+ * Dealership represents all dealerships which any car belongs to
  *
  * @author Isabelle Thorpe
  * @version 27/01/2021

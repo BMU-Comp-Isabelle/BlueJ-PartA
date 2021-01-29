@@ -23,15 +23,25 @@ public class Car
      */
     public Car(String carBrand, String carColor,
     int carYear, int carMileage) 
+    
 
     {
         make = carBrand;
         color = carColor;
         year = carYear;
         mileage = carMileage;
-    
+        
+      
+        if(carMileage <= 100000) 
+        {
+            carMileage = carMileage =- 100000;
+           
+        }
+        else 
+        {
+            System.out.println("Please input mileage less than 100000: ");
+        }
     }
-
     /**
      * Add a dealership to the car
      */
