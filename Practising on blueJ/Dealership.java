@@ -1,36 +1,28 @@
 /**
  * Write a description of class Dealership here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Isabelle Thorpe
+ * @version 27/01/2021
  */
 public class Dealership
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String location;
 
     /**
      * Constructor for objects of class Dealership
      */
-    public Dealership()
-    {
-        // initialise instance variables
-        x = 0;
-    }
+    public Dealership(String l)
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
     {
-        // put your code here
-        return x + y;
+       location = l;
+    }
+    
+     /**
+     * Return the cars location 
+     */
+    public String getLocation()
+    {
+         return this.location;
     }
 }
-
-
-
-
