@@ -1,0 +1,55 @@
+TicketMachine chilternRailways = new TicketMachine();
+chilternRailways.selectAylesburyTicket();
+You have selected Aylesbury station
+chilternRailways.insertTwoPound();
+You just entered two pounds
+Your balance is now 200
+chilternRailways.printTicket();
+You must insert at least: 20 more cents.
+chilternRailways.insertTwentyPence();
+You just entered twenty pence
+Your balance is now 220
+chilternRailways.printTicket();
+##################
+Destination: Aylesbury, Cost: 220, Date: 06/02/2021
+##################
+
+Your balance is now 0
+
+chilternRailways.selectAmershamTicket();
+You have selected Amersham station
+chilternRailways.insertTwoPound();
+You just entered two pounds
+Your balance is now 200
+chilternRailways.insertTwoPound();
+You just entered two pounds
+Your balance is now 400
+chilternRailways.printTicket();
+##################
+Destination: Amersham, Cost: 300, Date: 06/02/2021
+##################
+
+Your balance is now 100
+chilternRailways.refundBalance()
+    returned int 100
+
+chilternRailways.selectHighWycombeTicket();
+You have selected HighWycombe station
+chilternRailways.insertTwoPound();
+You just entered two pounds
+Your balance is now 200
+chilternRailways.insertOnePound();
+You just entered one pound
+Your balance is now 300
+chilternRailways.insertTenPence();
+You just entered ten pence
+Your balance is now 310
+chilternRailways.insertTwentyPence();
+You just entered twenty pence
+Your balance is now 330
+chilternRailways.printTicket();
+##################
+Destination: High Wycombe, Cost: 330, Date: 06/02/2021
+##################
+
+Your balance is now 0

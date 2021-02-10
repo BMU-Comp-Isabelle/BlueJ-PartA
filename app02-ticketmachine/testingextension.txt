@@ -1,0 +1,23 @@
+TicketMachine chilternRailways = new TicketMachine();
+chilternRailways.displayDestinations();
+Please choose from one of the following stations
+
+Destination: Aylesbury, Cost: 220, Date: Wed Feb 10 20:58:43 GMT 2021
+
+Destination: Amersham, Cost: 300, Date: Wed Feb 10 20:58:43 GMT 2021
+
+Destination: High Wycombe, Cost: 330, Date: Wed Feb 10 20:58:43 GMT 2021
+chilternRailways.selectAylesburyTicket();
+You have selected Aylesbury station
+chilternRailways.insertTwoPound(Coin.P200);
+You just entered two pounds
+Your balance is now 200
+chilternRailways.insertTwentyPence(Coin.P20);
+You just entered twenty pence
+Your balance is now 220
+chilternRailways.printTicket();
+##################
+Destination: Aylesbury, Cost: 220, Date: Wed Feb 10 20:58:43 GMT 2021
+##################
+
+Your balance is now 0
