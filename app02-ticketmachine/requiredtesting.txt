@@ -5,7 +5,7 @@ chilternRailways.insertTwoPound();
 You just entered two pounds
 Your balance is now 200
 chilternRailways.printTicket();
-You must insert at least: 20 more cents.
+You must insert at least: -200 more cents.
 chilternRailways.insertTwentyPence();
 You just entered twenty pence
 Your balance is now 220
