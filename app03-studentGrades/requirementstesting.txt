@@ -20,17 +20,17 @@ Please enter a mark between 0 and 100
 xml.awardModuleMark(60);
 computing.print();
 Course: G800 - Computing
-Module 1: Web Dev (6829) Mark: 80
-Module 2: Programming (7762) Mark: 75
-Module 3: Cyber (7895) Mark: 65
-Module 4: XML (7260) Mark: 60
+Module 1: Web Dev (6829) Mark: 80%
+Module 2: Programming (7762) Mark: 75%
+Module 3: Cyber (7895) Mark: 65%
+Module 4: XML (7260) Mark: 60%
 Final Grade: A
 isabelle.print();
 Name: Isabelle
 Id: 234567
 Course: G800 - Computing
-Module 1: Web Dev (6829) Mark: 80
-Module 2: Programming (7762) Mark: 75
-Module 3: Cyber (7895) Mark: 65
-Module 4: XML (7260) Mark: 60
+Module 1: Web Dev (6829) Mark: 80%
+Module 2: Programming (7762) Mark: 75%
+Module 3: Cyber (7895) Mark: 65%
+Module 4: XML (7260) Mark: 60%
 Final Grade: A

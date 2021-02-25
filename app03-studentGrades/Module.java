@@ -97,7 +97,7 @@ public class Module
     {
         System.out.println("\nModule code: " + code);
         System.out.println("Module title: " + title);
-        System.out.println("Module mark: " + moduleMark);
+        System.out.println("Module mark: " + moduleMark + "%");
         System.out.println("Module completion: " + isCompleted);
     }
 
