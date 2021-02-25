@@ -2,21 +2,24 @@
 /**
  * This class represents each of the Modules that the
  * student will take as part of the course.
- * It holds the title, module code, and percentage mark.
+ * It holds the title, module code, module mark, and module completion status.
  * 
  * @author Isabelle Thorpe
- * @version 23/02/2021
+ * @version 24/02/2021
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
+    // the module's title
     private String title;
+    // the module's code 
     private String code;
+    // the module mark
     private int moduleMark;
+    // the completion statement of the module, true or false
     private boolean isCompleted;
 
     /**
-     * Constructor for objects of class Module
+     * Create a new module with title, code, ability to add marks and completion statement.
      */
     public Module(String title, String code)
     {
@@ -28,9 +31,9 @@ public class Module
     }
 
     /**
-     * This method awards the mark for the module
+     * This method awards the mark for the module.
      */
-    public void awardmoduleMark(int moduleMark)
+    public void awardModuleMark(int moduleMark)
     {
         if(moduleMark >= 0 && moduleMark <= 100)
         {
@@ -39,12 +42,12 @@ public class Module
         }
         else
         {
-            System.out.println("Please enter a mark between 0 nad 100"); 
+            System.out.println("Please enter a mark between 0 and 100"); 
         }
     }
 
     /**
-     * This method checks to see if the module is complete
+     * This method checks to see if the module is complete.
      */
     public void checkCompletion()
     {
@@ -55,7 +58,7 @@ public class Module
     }
 
     /**
-     * This method returns if the module is complete or not
+     * This method returns if the module is complete or not.
      */
     public boolean getCompletionStatus()
     {   
@@ -63,21 +66,30 @@ public class Module
         return isCompleted;
     }
 
-    public int getmoduleMark()
+    /**
+     * This method returns the module mark.
+     */
+    public int getModuleMark()
     {
         return moduleMark;
     }
-    
-    public String getmoduleCode()
+
+    /**
+     * This method returns the module code.
+     */
+    public String getModuleCode()
     {
         return code;
     }
-    
-        public String getmoduleTitle()
+
+    /**
+     * This method returns the module title.
+     */
+    public String getModuleTitle()
     {
         return title;
     }
-    
+
     /**
      * This method prints out the module details
      */

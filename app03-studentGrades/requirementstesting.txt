@@ -1,0 +1,36 @@
+Course computing = new Course("G800", "Computing");
+Module webdev = new Module("Web Dev", "6829");
+Module programming = new Module("Programming", "7762");
+Module cyber = new Module("Cyber", "7895");
+Module xml = new Module("XML", "7260");
+Student isabelle = new Student("Isabelle", "234567");
+computing.addModule(webdev, 1);
+computing.addModule(programming, 2);
+computing.addModule(cyber, 3);
+computing.addModule(xml, 4);
+isabelle.enrolOnCourse(computing);
+computing.checkCompletion();
+Please complete all modules
+webdev.awardModuleMark(80);
+programming.awardModuleMark(75);
+cyber.awardModuleMark(65);
+xml.awardModuleMark(30);
+xml.awardModuleMark(120);
+Please enter a mark between 0 and 100
+xml.awardModuleMark(60);
+computing.print();
+Course: G800 - Computing
+Module 1: Web Dev (6829) Mark: 80
+Module 2: Programming (7762) Mark: 75
+Module 3: Cyber (7895) Mark: 65
+Module 4: XML (7260) Mark: 60
+Final Grade: A
+isabelle.print();
+Name: Isabelle
+Id: 234567
+Course: G800 - Computing
+Module 1: Web Dev (6829) Mark: 80
+Module 2: Programming (7762) Mark: 75
+Module 3: Cyber (7895) Mark: 65
+Module 4: XML (7260) Mark: 60
+Final Grade: A

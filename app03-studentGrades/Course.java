@@ -1,23 +1,26 @@
 
 /**
- * This class stores information about a course
- * that enrolled students may want to complete
+ * This class represents information about a course
+ * that enrolled students may want to complete.
+ * It holds the course title, code, modules assigned, and the final grade through %.
  *
  * @author Isabelle Thorpe
- * @version 23/02/2021
+ * @version 24/02/2021
  */
 public class Course
 {
-    // instance variables - replace the example below with your own
-    private String codeNo;
+    // the course's title
     private String title;
-    private int mark;
+    // the course's code number
+    private String codeNo;
 
+    // modules 1-4 that can be assigned to a course
     private Module module1;
     private Module module2;
     private Module module3;
     private Module module4;
 
+    //  the completion status of a course
     private boolean isCompleted;
     /**
      * Constructor for objects of class Course
@@ -37,10 +40,10 @@ public class Course
     {
         // put your code here
         System.out.println("Course: " + codeNo + " - " + title);
-        System.out.println("Module 1: " + module1.getmoduleTitle() + " (" + module1.getmoduleCode() + ") Mark: " + module1.getmoduleMark());
-        System.out.println("Module 2: " + module2.getmoduleTitle() + " (" + module2.getmoduleCode() + ") Mark: " + module2.getmoduleMark());
-        System.out.println("Module 3: " + module3.getmoduleTitle() + " (" + module3.getmoduleCode() + ") Mark: " + module3.getmoduleMark());
-        System.out.println("Module 4: " + module4.getmoduleTitle() + " (" + module4.getmoduleCode() + ") Mark: " + module4.getmoduleMark());
+        System.out.println("Module 1: " + module1.getModuleTitle() + " (" + module1.getModuleCode() + ") Mark: " + module1.getModuleMark());
+        System.out.println("Module 2: " + module2.getModuleTitle() + " (" + module2.getModuleCode() + ") Mark: " + module2.getModuleMark());
+        System.out.println("Module 3: " + module3.getModuleTitle() + " (" + module3.getModuleCode() + ") Mark: " + module3.getModuleMark());
+        System.out.println("Module 4: " + module4.getModuleTitle() + " (" + module4.getModuleCode() + ") Mark: " + module4.getModuleMark());
         System.out.println("Final Grade: " + getFinalGrade());
     }
 
@@ -88,10 +91,13 @@ public class Course
 
     }
 
+    /**
+     * Get final grade of the entire course
+     */
     public String getFinalGrade()
     {
-        int totalMark = (module1.getmoduleMark() + module2.getmoduleMark() + 
-                module3.getmoduleMark() + module4.getmoduleMark()) / 4;
+        int totalMark = (module1.getModuleMark() + module2.getModuleMark() + 
+                module3.getModuleMark() + module4.getModuleMark()) / 4;
 
         if(totalMark <= 39)
         { 

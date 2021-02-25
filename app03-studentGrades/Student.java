@@ -2,10 +2,10 @@ import java.util.*;
 
 /**
  * The Student class represents a student in a student administration system.
- * It holds the student details including name, ID, and Course.
+ * It holds the student details including name, ID and assigned course.
  * 
  * @author Isabelle Thorpe
- * @version 23/02/2021
+ * @version 24/02/2021
  */
 public class Student
 {
@@ -13,19 +13,17 @@ public class Student
     private String name;
     // the student ID
     private String id;
-    // the amount of credits for study taken so far
-    private int credits;
-
+    // the course the student is taking
     private Course course;
 
     /**
      * Create a new student with a given name and ID number.
      */
     public Student(String fullName, String studentID)
-    {
+    {   
+        // initialise instance variables
         name = fullName;
         id = studentID;
-        credits = 0;
     }
 
     /**
@@ -53,22 +51,6 @@ public class Student
     }
 
     /**
-     * Add some credit points to the student's accumulated credits.
-     */
-    public void addCredits(int additionalPoints)
-    {
-        credits += additionalPoints;
-    }
-
-    /**
-     * Return the number of credit points this student has accumulated.
-     */
-    public int getCredits()
-    {
-        return credits;
-    }
-
-    /**
      * Return the login name of this student. The login name is a combination
      * of the first four characters of the student's name and the first three
      * characters of the student's ID number.
@@ -78,6 +60,9 @@ public class Student
         return name.substring(0,4) + id.substring(0,3);
     }
 
+    /**
+     * Enrol the student onto chosen course.
+     */
     public void enrolOnCourse(Course course)
     {
         this.course = course;
@@ -91,6 +76,5 @@ public class Student
         System.out.println("Name: " + name);
         System.out.println("Id: " + id);
         course.print();
-        System.out.println("Credits: " + credits);
     }
 }
