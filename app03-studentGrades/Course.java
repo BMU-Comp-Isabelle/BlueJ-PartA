@@ -11,6 +11,7 @@ public class Course
     // instance variables - replace the example below with your own
     private String codeNo;
     private String title;
+    private int mark;
 
     private Module module1;
     private Module module2;
@@ -18,7 +19,6 @@ public class Course
     private Module module4;
 
     private boolean isCompleted;
-
     /**
      * Constructor for objects of class Course
      */
@@ -37,6 +37,11 @@ public class Course
     {
         // put your code here
         System.out.println("Course: " + codeNo + " - " + title);
+        System.out.println("Module 1: " + module1.getmoduleTitle() + " (" + module1.getmoduleCode() + ") Mark: " + module1.getmoduleMark());
+        System.out.println("Module 2: " + module2.getmoduleTitle() + " (" + module2.getmoduleCode() + ") Mark: " + module2.getmoduleMark());
+        System.out.println("Module 3: " + module3.getmoduleTitle() + " (" + module3.getmoduleCode() + ") Mark: " + module3.getmoduleMark());
+        System.out.println("Module 4: " + module4.getmoduleTitle() + " (" + module4.getmoduleCode() + ") Mark: " + module4.getmoduleMark());
+        System.out.println("Final Grade: " + getFinalGrade());
     }
 
     /**
@@ -80,5 +85,34 @@ public class Course
             System.out.println("Please complete all modules");
 
         }
+
+    }
+
+    public String getFinalGrade()
+    {
+        int totalMark = (module1.getmoduleMark() + module2.getmoduleMark() + 
+                module3.getmoduleMark() + module4.getmoduleMark()) / 4;
+
+        if(totalMark <= 39)
+        { 
+            return "F";
+        }
+        else if(totalMark <= 49)
+        {
+            return "D";
+        }
+        else if(totalMark <= 59)
+        {
+            return "C";
+        }
+        else if(totalMark <= 69)
+        {
+            return "B";
+        }
+        else
+        {
+            return "A";
+        }
+
     }
 }

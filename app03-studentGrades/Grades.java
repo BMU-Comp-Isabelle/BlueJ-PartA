@@ -1,9 +1,9 @@
-
 /**
+ * Not in Use
  * Enumeration class Grades - write a description of the enum class here
  *
- * @author (your name here)
- * @version (version number or date here)
+ * @author Isabelle Thorpe
+ * @version 24/04/2021
  */
 public enum Grades
 {

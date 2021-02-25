@@ -12,7 +12,7 @@ public class Module
     // instance variables - replace the example below with your own
     private String title;
     private String code;
-    private int mark;
+    private int moduleMark;
     private boolean isCompleted;
 
     /**
@@ -23,18 +23,18 @@ public class Module
         // initialise instance variables
         this.title = title;
         this.code = code;
-        mark = 0;
-        isCompleted = false;
+        this.moduleMark = 0;
+        this.isCompleted = false;
     }
 
     /**
      * This method awards the mark for the module
      */
-    public void awardMark(int mark)
+    public void awardmoduleMark(int moduleMark)
     {
-        if(mark >= 0 && mark <= 100)
+        if(moduleMark >= 0 && moduleMark <= 100)
         {
-            this.mark = mark;
+            this.moduleMark = moduleMark;
             checkCompletion();
         }
         else
@@ -48,9 +48,9 @@ public class Module
      */
     public void checkCompletion()
     {
-        if(mark >= 40)
+        if(moduleMark >= 40)
         {
-            isCompleted = true;
+            this.isCompleted = true;
         }
     }
 
@@ -58,10 +58,26 @@ public class Module
      * This method returns if the module is complete or not
      */
     public boolean getCompletionStatus()
-    {      
+    {   
+        checkCompletion();
         return isCompleted;
     }
 
+    public int getmoduleMark()
+    {
+        return moduleMark;
+    }
+    
+    public String getmoduleCode()
+    {
+        return code;
+    }
+    
+        public String getmoduleTitle()
+    {
+        return title;
+    }
+    
     /**
      * This method prints out the module details
      */
@@ -69,7 +85,8 @@ public class Module
     {
         System.out.println("\nModule code: " + code);
         System.out.println("Module title: " + title);
-        System.out.println("Module mark: " + mark);
+        System.out.println("Module mark: " + moduleMark);
         System.out.println("Module completion: " + isCompleted);
     }
+
 }
