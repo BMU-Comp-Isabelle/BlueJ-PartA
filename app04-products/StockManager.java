@@ -28,7 +28,7 @@ public class StockManager
     {
         stock.add(item);
     }
-    
+
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -37,32 +37,43 @@ public class StockManager
      */
     public void deliverProduct(int id, int amount)
     {
+        Product product = findProduct(id);
+        if(product != null)
+        {
+            product.increaseQuantity(amount);
+        }
     }
     
-    /**
-     * 
-     */
     public Product findProduct(int id)
     {
+        for(Product product : stock)
+        {
+            if(id == product.getID())
+            {
+                return product;
+            }
+        }
         return null;
     }
-    
+
     /**
+     * GIVE VALIDATION if we don't "find product" we don't 
+     * want to call an increased quantity of a product
+     * that doesn't exist
      * Sell one of the given item.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    public void sellProduct(int id, int amount)
     {
         Product product = findProduct(id);
-        
+
         if(product != null) 
         {
-            product.sellOne();
+            product.sellQuantity(amount);
         }
     }    
 
-    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -83,13 +94,13 @@ public class StockManager
     public void printProduct(int id)
     {
         Product product = findProduct(id);
-        
+
         if(product != null) 
         {
             System.out.println(product.toString());
         }
     }
-    
+
     /**
      * Print out each product in the stock
      * in the order they are in the stock list
@@ -97,7 +108,7 @@ public class StockManager
     public void printAllProducts()
     {
         printHeading();
-        
+
         for(Product product : stock)
         {
             System.out.println(product);
@@ -109,7 +120,7 @@ public class StockManager
     public void printHeading()
     {
         System.out.println();
-        System.out.println("Peacock's Stock List");
+        System.out.println("o2's Stock List");
         System.out.println("====================");
         System.out.println();
     }

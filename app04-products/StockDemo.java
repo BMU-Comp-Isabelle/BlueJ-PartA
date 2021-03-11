@@ -49,9 +49,12 @@ public class StockDemo
     
     private void demoDeliverProducts()
     {
+        manager.deliverProduct(103, 20);
     }
 
     private void demoSellProducts()
     {
+        manager.sellProduct(103, 10 );
     }    
+    
 }
