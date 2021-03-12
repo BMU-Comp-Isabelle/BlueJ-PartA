@@ -89,7 +89,7 @@ public class Product
         {
 
             System.out.println("Attempt to restock " + name +
-            " with a non-positive amount: " + amount);
+                " with a non-positive amount: " + amount);
         }
     }
 

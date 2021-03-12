@@ -68,7 +68,7 @@ public class StockDemo
         // Demo's the products sale method
         manager.sellProduct(103, 10 );
     }    
-    
+
     /**
      * Demo of updating the products name using products ID.
      */

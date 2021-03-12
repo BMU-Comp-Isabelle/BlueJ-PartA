@@ -133,28 +133,28 @@ public class StockManager
      */
     public void sellProduct(int id, int amount)
     {
-       Product product = findProduct(id);
-       
-       if(product != null) 
-       { // If product exists 
+        Product product = findProduct(id);
+
+        if(product != null) 
+        { // If product exists 
             if (amount <= product.getQuantity())
             { 
                 // There is enough stock
-                System.out.println("Units before sale: " + product.getQuantity());
+                System.out.println(product.getName() + " Number of units before sale: " + product.getQuantity());
                 product.sellQuantity(amount);
-                System.out.println("Units remaining: " + product.getQuantity());
+                System.out.println(product.getName() + " Number of units remaining: " + product.getQuantity());
             }
             else
             { 
                 // There isn't enough stock
                 System.out.println("Product " + product.getName() + " does not have enough stock.");
             }
-       }
-       else
-       { 
+        }
+        else
+        { 
             // If this product does not exist then
             System.out.println("Product " + product.getName() + " does not exist.");
-       }
+        }
     }    
 
     /**

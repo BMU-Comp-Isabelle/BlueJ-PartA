@@ -15,8 +15,8 @@ o2StockManager.deliverProduct(112, 50);
 o2StockManager.deliverProduct(113, 7);
 
 o2StockManager.sellProduct(105, 7);
-Units before sale: 18
-Units remaining: 11
+OnePlus 9 Pro Number of units before sale: 18
+OnePlus 9 Pro Number of units remaining: 11
 o2StockManager.sellProduct(105, 20);
 Product OnePlus 9 Pro does not have enough stock.
 o2StockManager.updateProductNameById(105, "OnePlus 9 Pro SE");
