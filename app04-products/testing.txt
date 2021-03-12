@@ -1,0 +1,55 @@
+StockManager o2StockManager = new StockManager();
+StockDemo o2StockDemo = new StockDemo(o2StockManager);
+o2StockManager.deliverProduct(101, 20);
+o2StockManager.deliverProduct(102, 40);
+o2StockManager.deliverProduct(103, 4);
+o2StockManager.deliverProduct(104, 2);
+o2StockManager.deliverProduct(105, 18);
+o2StockManager.deliverProduct(106, 90);
+o2StockManager.deliverProduct(107, 1);
+o2StockManager.deliverProduct(108, 18);
+o2StockManager.deliverProduct(109, 3);
+o2StockManager.deliverProduct(110, 14);
+o2StockManager.deliverProduct(111, 2);
+o2StockManager.deliverProduct(112, 50);
+o2StockManager.deliverProduct(113, 7);
+
+o2StockManager.sellProduct(105, 7);
+Units before sale: 18
+Units remaining: 11
+o2StockManager.sellProduct(105, 20);
+Product OnePlus 9 Pro does not have enough stock.
+o2StockManager.updateProductNameById(105, "OnePlus 9 Pro SE");
+o2StockManager.printAllProducts();
+
+o2's Stock List
+====================
+
+101: Apple iPhone 12 stock level: 20
+102: Apple iPhone 11 stock level: 40
+103: Apple iPhone X stock level: 4
+104: Apple iPhone  stock level: 2
+105: OnePlus 9 Pro SE stock level: 11
+106: OnePlus 9 stock level: 90
+107: OnePlus 9 E stock level: 1
+108: Samsung Galaxy S21 stock level: 18
+109: Samsung Galaxy A12 stock level: 3
+110: Samsung Galaxy A71 stock level: 14
+111: Google Pixel 5 stock level: 2
+112: Google Pixel 4A stock level: 50
+
+o2StockManager.getProductsByKeyword("Apple");
+101: Apple iPhone 12 stock level: 20
+102: Apple iPhone 11 stock level: 40
+103: Apple iPhone X stock level: 4
+104: Apple iPhone  stock level: 2
+o2StockManager.getProductsByKeyword("Google");
+111: Google Pixel 5 stock level: 2
+112: Google Pixel 4A stock level: 50
+o2StockManager.getProductsLowStock();
+Products with low stock:
+103: Apple iPhone X stock level: 4
+104: Apple iPhone  stock level: 2
+107: OnePlus 9 E stock level: 1
+109: Samsung Galaxy A12 stock level: 3
+111: Google Pixel 5 stock level: 2
