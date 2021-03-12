@@ -57,4 +57,10 @@ public class StockDemo
         manager.sellProduct(103, 10 );
     }    
     
+        private void demoUpdateProductByNameID()
+    {
+        manager.updateProductNameById(103, "");
+    } 
+    
+    
 }

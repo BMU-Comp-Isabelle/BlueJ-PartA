@@ -43,7 +43,7 @@ public class StockManager
             product.increaseQuantity(amount);
         }
     }
-    
+
     public Product findProduct(int id)
     {
         for(Product product : stock)
@@ -56,6 +56,51 @@ public class StockManager
         return null;
     }
 
+    public void updateProductNameById(int id, String newName)
+    {
+        for(Product product : stock)
+        {
+            if(id == product.getID())
+            {
+                product.renameProduct(newName);
+            }
+        }
+    }
+
+    public void removeProductById(int id)
+    {
+        for(Product product : stock)
+        {
+            if(id == product.getID())
+            {
+                stock.remove(product);
+            }
+        }
+    }
+    
+    public void getProductsByKeyword(String keyword)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName().contains(keyword))
+            {
+                System.out.println(product.toString());
+            }
+        }
+    }
+
+    public void getProductsLowStock()
+    {
+        System.out.println("Products with low stock:");
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 5)
+            {
+                System.out.println(product.toString());
+            }
+        }
+    }
+    
     /**
      * GIVE VALIDATION if we don't "find product" we don't 
      * want to call an increased quantity of a product
@@ -67,13 +112,19 @@ public class StockManager
     public void sellProduct(int id, int amount)
     {
         Product product = findProduct(id);
-
         if(product != null) 
-        {
-            product.sellQuantity(amount);
+        { // If product exists
+            if (amount <= product.getQuantity())
+            { // There is enough stock
+                product.sellQuantity(amount);
+            } else { // There isn't enough stock
+                System.out.println("Product " + product.getName() + " does not have enough stock.");
+            }
+        } else { // If this product does not exist then
+            System.out.println("Product " + product.getName() + " does not exist.");
         }
-    }    
 
+    }    
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -111,12 +162,12 @@ public class StockManager
 
         for(Product product : stock)
         {
-            System.out.println(product);
+            System.out.println(product.toString());
         }
 
         System.out.println();
     }
-    
+
     public void printHeading()
     {
         System.out.println();

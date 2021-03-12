@@ -41,7 +41,15 @@ public class Product
     {
         return name;
     }
-
+    
+    /**
+     * Update the product's name.
+     */
+    public void renameProduct(String newName)
+    {
+        this.name = newName;
+    }
+    
     /**
      * @return The quantity in stock.
      */
