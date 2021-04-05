@@ -1,0 +1,154 @@
+Program.main();
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > add
+Please enter the product name you wish to add > Samsung Galaxy S10
+Please enter the product ID you wish to add > 
+111
+Samsung Galaxy S10: 111 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > add
+Please enter the product name you wish to add > Samsung Galaxy S20
+Please enter the product ID you wish to add > 
+112
+Samsung Galaxy S20: 112 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > add
+Please enter the product name you wish to add > Apple iPhone 11
+Please enter the product ID you wish to add > 
+113
+Apple iPhone 11: 113 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > add
+Please enter the product name you wish to add > Apple iPhone 12
+Please enter the product ID you wish to add > 
+114
+Apple iPhone 12: 114 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > Add
+Please enter the product name you wish to add > Motorola G9 Plus
+Please enter the product ID you wish to add > 
+115
+Motorola G9 Plus: 115 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > Add
+Please enter the product name you wish to add > Google Pixel
+Please enter the product ID you wish to add > 
+113
+113 is already being used, please pick another
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > Add
+Please enter the product name you wish to add > 
+Your entry is blank!
+Please enter the product name you wish to add > 

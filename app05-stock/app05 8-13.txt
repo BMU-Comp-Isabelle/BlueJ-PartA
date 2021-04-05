@@ -1,0 +1,170 @@
+Please enter your choice > Add
+Please enter the product name you wish to add > 
+Your entry is blank!
+Please enter the product name you wish to add > Google Pixel
+Please enter the product ID you wish to add > 
+116
+Google Pixel: 116 has been added
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > remove
+Please enter the product ID you wish to remove > 
+113
+Apple iPhone 11 has been removed
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > remove
+Please enter the product ID you wish to remove > 
+203
+Cannot remove product (id: 203) as it does not exist
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > print
+
+o2's Stock List
+====================
+
+111: Samsung Galaxy S10 stock level: 0
+112: Samsung Galaxy S20 stock level: 0
+114: Apple iPhone 12 stock level: 0
+115: Motorola G9 Plus stock level: 0
+116: Google Pixel stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > deliver
+Please enter the product ID for delivery > 
+112
+Please enter the number of units for delivery > 
+8
+8 units have been delivered for Samsung Galaxy S20
+112: Samsung Galaxy S20 stock level: 8
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > deliver
+Please enter the product ID for delivery > 
+112
+Please enter the number of units for delivery > 
+-4
+Your value is less than zero!
+Please enter the number of units for delivery > 
+1
+1 units have been delivered for Samsung Galaxy S20
+112: Samsung Galaxy S20 stock level: 9
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > sell
+Please enter the product ID for sale > 
+112
+Please enter the number of units for sale > 
+3
+Samsung Galaxy S20 units sold: 3
+Stock update: 112: Samsung Galaxy S20 stock level: 6
+******************************
+ Stock Management Application 
+    App05: Isabelle Thorpe
+******************************
+
+    Add:         Add a new product
+    Remove:      Remove an old product
+    Deliver:     Deliver a product
+    Sell:        Sell a product
+    Print Single:Print one product
+    Print:       Print all products
+    Low Stock:   Print products with low stock
+    Restock:     Restock products
+    Rename:      Rename a product
+    Search:      Search for a product
+    Quit:        Quit the program
+
+Please enter your choice > 

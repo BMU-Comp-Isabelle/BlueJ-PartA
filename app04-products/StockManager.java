@@ -70,29 +70,47 @@ public class StockManager
     public void updateProductNameById(int id, String newName)
     {
         for(Product product : stock)
+
         {
             if(id == product.getID())
             {
                 // Allows us to give product a new name.
+                System.out.println("Updating product name " + product.getName() 
+                    + " from the stock list to");
                 product.renameProduct(newName);
+                System.out.println(newName);
             }
+        }
+    }
+
+    public void removeProduct(int id)
+    {
+        Product product = findProduct(id);
+
+        System.out.println("Removing product " + product.getName() 
+            + " from the stock list");
+
+        if(product != null)
+        {
+            stock.remove(product);
         }
     }
 
     /**
      * Removing a product by ID.
-     */
+
     public void removeProductById(int id)
     {
-        for(Product product : stock)
-        {
-            if(id == product.getID())
-            {
-                /// Removes the product from the stock.
-                stock.remove(product);
-            }
-        }
+    for(Product product : stock)
+    {
+    if(id == product.getID())
+    {
+    // Removes the product from the stock.
+    stock.remove(product);
     }
+    }
+    }
+     */
 
     /**
      * Identies a product through use of keyword (Query).

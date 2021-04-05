@@ -31,10 +31,8 @@ public class InputReader
     {
         //re-instantiate scanner object to prevent empty nextLine
         reader = new Scanner(System.in);
-        
         String inputLine = null;
         boolean isValid = false;
-        
         while(!isValid)
         {
             System.out.print(prompt);         // print prompt
@@ -45,7 +43,6 @@ public class InputReader
             else 
                 System.out.println("Your entry is blank!");
         }
-
         return inputLine;
     }
     
@@ -59,20 +56,17 @@ public class InputReader
     {
         int number = 0;
         boolean isValid = false;
-        
         while(!isValid)
         {
             System.out.println(prompt);         // print prompt
             number = reader.nextInt();
-            
             if(number > 0)
             {
                 isValid = true;
             }
-            else 
+            else
                 System.out.println("Your value is less than zero!");
         }
-
         return number;
     }
 }

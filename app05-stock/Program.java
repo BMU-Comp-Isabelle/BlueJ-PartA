@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.lang.InterruptedException;
 
 /**
- * Write a description of class Program here.
+ * Runs o2s application user interface
  *
  * @author Isabelle Thorpe
  * @version 31/03/21
